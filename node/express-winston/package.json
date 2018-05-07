@@ -1,5 +1,5 @@
 {
-  "name": "bunyan-node-test",
+  "name": "express-winston-timber",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,6 @@
   },
   "dependencies": {
     "app-root-path": "^2.0.1",
-    "bunyan": "^1.8.12",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
