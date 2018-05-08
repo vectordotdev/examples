@@ -3,12 +3,6 @@ var appRoot = require('app-root-path');
 var timber = require('timber');
 var winston = require('winston');
 
-// Configure debug output for timber-node package
-timber.config.debug_logger = process.stdout;
-
-// Install the transport
-// timber.install(transport);
-
 // set default log level
 // can also use an environment variable here
 var logLevel = 'info';
