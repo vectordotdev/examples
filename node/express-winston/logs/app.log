@@ -11,3 +11,5 @@
 {"level":"info","message":"GET /stylesheets/style.css 304 - - 4.226 ms\n","timestamp":"2018-05-07T17:33:09.599Z"}
 {"level":"info","message":"GET / 304 - - 177.718 ms\n","timestamp":"2018-05-07T20:21:34.853Z"}
 {"level":"info","message":"GET /stylesheets/style.css 304 - - 1.637 ms\n","timestamp":"2018-05-07T20:21:34.886Z"}
+{"level":"info","message":"GET / 304 - - 315.120 ms\n","timestamp":"2018-05-08T14:21:32.374Z"}
+{"level":"info","message":"GET /stylesheets/style.css 304 - - 5.284 ms\n","timestamp":"2018-05-08T14:21:32.413Z"}
