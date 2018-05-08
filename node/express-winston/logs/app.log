@@ -9,3 +9,5 @@
 {"level":"info","message":"GET /stylesheets/style.css 304 - - 2.345 ms\n","timestamp":"2018-05-07T17:26:11.657Z"}
 {"level":"info","message":"GET / 304 - - 187.357 ms\n","timestamp":"2018-05-07T17:33:09.570Z"}
 {"level":"info","message":"GET /stylesheets/style.css 304 - - 4.226 ms\n","timestamp":"2018-05-07T17:33:09.599Z"}
+{"level":"info","message":"GET / 304 - - 177.718 ms\n","timestamp":"2018-05-07T20:21:34.853Z"}
+{"level":"info","message":"GET /stylesheets/style.css 304 - - 1.637 ms\n","timestamp":"2018-05-07T20:21:34.886Z"}

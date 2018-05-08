@@ -14,7 +14,7 @@ timber.config.debug_logger = process.stdout;
 var logLevel = 'info';
 
 // Timber API Key
-var timberKey = '2829_fa4d60d7ec980c41:9f5d48e2aa445eee63dabc9e69ceb8ce66a4b2e9eda59a9d62edb9958953837a'
+var timberKey = '2829_fa4d60d7ec980c41:9f5d48e2aa445eee63dabc9e69ceb8ce66a4b2e9eda59a9d62edb9958953837a';
 
 // Set up logger
 var customColors = {
@@ -34,7 +34,7 @@ var levels = {
   info: 3,
   debug: 4,
   trace: 5
-}
+};
 
 // Custom settings for each transport (file, console, timber)
 var transportOptions = {
@@ -66,16 +66,16 @@ var config = {
     new timber.transports.Winston(timberKey)
   ],
   exitOnError: false, // do not exit on handled exceptions
-}
+};
 
 // Create the logger
-var logger = new (winston.Logger)(config)
+var logger = new (winston.Logger)(config);
 
 // Add custom colors
 winston.addColors(customColors);
 
 // Extend logger object to properly log 'Error' types
-var origLog = logger.log
+var origLog = logger.log;
 
 logger.log = function (level, msg) {
   if (msg instanceof Error) {
@@ -85,14 +85,14 @@ logger.log = function (level, msg) {
   } else {
     origLog.apply(logger, arguments)
   }
-}
+};
 
 logger.stream = {
   write: function(message, encoding) {
     // use the 'info' log level so the output will be picked up by both transports (file and console)
     logger.info(message);
   }
-}
+};
 
 /* Example Logging
   var log = require('./log.js')
