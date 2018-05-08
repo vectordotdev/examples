@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var morgan = require('morgan');
-var bunyan = require('./config/bunyan');
+var log = require('./utils/log');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
