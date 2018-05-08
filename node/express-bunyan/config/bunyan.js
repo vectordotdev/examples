@@ -2,6 +2,9 @@ var timber = require('timber');
 var bunyan = require('bunyan');
 var appRoot = require('app-root-path');
 
+// Configure debug output for timber-node package
+timber.config.debug_logger = process.stdout;
+
 // set default log level
 // can also use an environment variable here
 var logLevel = 'info';
