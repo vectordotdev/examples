@@ -1,0 +1,22 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: logging-app-pod-sidecar-log-streamer
+spec:
+  containers:
+  - name: logging-app
+    image: timberio/logging-app
+    args: ["-file", "/var/log/logging-app/app.log"]
+    volumeMounts:
+    - name: logging-app-log-dir
+      mountPath: /var/log/logging-app
+  - name: streamer
+    image: busybox
+    args: [/bin/sh, -c, 'tail -n+1 -f /var/log/logging-app/app.log']
+    volumeMounts:
+    - name: logging-app-log-dir
+      mountPath: /var/log/logging-app
+  volumes:
+  - name: logging-app-log-dir
+    emptyDir: {}
