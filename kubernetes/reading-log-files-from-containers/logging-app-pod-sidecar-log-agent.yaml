@@ -24,7 +24,7 @@ spec:
     - name: logging-app-log-dir
       mountPath: /var/log/logging-app
   - name: timber-agent
-    image: "timberio/agent:0.8.0"
+    image: "timberio/agent:0.8.1"
     args: ["capture-files", "-c", "/timber/config.toml"]
     volumeMounts:
     - name: logging-app-pod-sidecar-log-agent-config-map
